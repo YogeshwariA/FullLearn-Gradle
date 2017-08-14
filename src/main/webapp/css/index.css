@@ -1,0 +1,50 @@
+.design {
+	width: 350px;
+	height: 683px;
+	background: grey;
+	float:left;
+}
+
+.white-color {
+	color: white !important;
+}
+
+.img {
+	border-radius: 50px;
+	width: 45px;
+	height: 45px;
+	align: right;
+}
+
+.sizs {
+	font-size: x-large;
+}
+
+.head {
+	color: white;
+	text-decoration: none !important;
+	text-decoration-line: none;
+	text-decoration-style: initial;
+	text-decoration-color: initial;
+}
+
+.link {
+	border-top-width: 40px;
+	padding-top: 255px;
+	padding-left: 135px;
+	border-right-width: 72px;
+	padding-right: 104px;
+	margin-top:-20;
+	
+}
+
+
+ul li
+{
+	list-style:none;
+}
+
+.full-card-center
+{
+	left:38%;
+}

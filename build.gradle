@@ -1,0 +1,37 @@
+apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: 'appengine'
+
+repositories {
+	mavenCentral()
+    jcenter()
+}
+
+buildscript {
+
+	repositories{
+		mavenCentral()
+		mavenLocal()
+		jcenter()
+	}
+	dependencies {
+        classpath 'com.google.appengine:gradle-appengine-plugin:1.9.48'
+    }
+}
+dependencies {
+    compile "org.jboss.resteasy:resteasy-jaxrs:3.0.19.Final", 
+    "org.jboss.resteasy:resteasy-jackson2-provider:3.0.19.Final",
+    "com.fasterxml.jackson.core:jackson-core:2.9.0",
+    "com.fasterxml.jackson.core:jackson-databind:2.9.0",
+    "com.fasterxml.jackson.core:jackson-annotations:2.9.0",
+    "javax.servlet:javax.servlet-api:3.1.0",
+    "org.json:org.json:2.0",
+    "junit:junit:4.4",
+    "javax.servlet:jstl:1.2"
+    
+    appengineSdk 'com.google.appengine:appengine-java-sdk:1.9.48'
+}
+appengine {
+downloadSdk = true
+httpPort = 8888
+}
